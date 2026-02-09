@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Menu, X, Phone, MapPin, Download, ChevronDown, Code, Brain, Trophy, Users, User } from 'lucide-react';
-import profileImg from '../assets/sid.webp';
+import profileImg from "https://storage.googleapis.com/astrologer-mahesh-mankar-img/DSC01906-2.jpg.jpeg"
 
 const NAV_ITEMS = ['About', 'Skills', 'Experience', 'Projects', 'Achievements', 'Contact'];
 
@@ -82,34 +82,34 @@ const PROJECTS = [
     desc: 'Modern, responsive website for a tech brand with animations and clean UI',
     tech: ['React', 'TailwindCSS', 'Framer Motion'],
     github: 'https://traillx.com/',
-  },  {
+  }, {
     name: 'ApnaGhar',
     desc: 'An intuitive platform connecting homeowners with trusted service providers aslo uses AR to visualize home improvements',
-    tech: ['AR.js','React', 'TailwindCSS', 'Framer Motion'],
+    tech: ['AR.js', 'React', 'TailwindCSS', 'Framer Motion'],
     github: 'https://apnaghar--yvotbngttc.expo.app/',
   },
 ];
 
 const ACHIEVEMENTS = [
-  { 
-    icon: Trophy, 
-    title: "10x National Hackathon Winner", 
-    desc: "Led team to 10 national wins with 8 consecutive victories" 
+  {
+    icon: Trophy,
+    title: "10x National Hackathon Winner",
+    desc: "Led team to 10 national wins with 8 consecutive victories"
   },
-  { 
-    icon: User, 
-    title: "Advantage Vidarbha 2025", 
-    desc: "Showcased startup, attracted 500+ visitors across a 3-day expo" 
+  {
+    icon: User,
+    title: "Advantage Vidarbha 2025",
+    desc: "Showcased startup, attracted 500+ visitors across a 3-day expo"
   },
-  { 
-    icon: Users, 
-    title: "Central India Hackathon Organizer", 
-    desc: "Scaled event from 75 teams to 800+ teams & 2000+ developers" 
+  {
+    icon: Users,
+    title: "Central India Hackathon Organizer",
+    desc: "Scaled event from 75 teams to 800+ teams & 2000+ developers"
   },
-  { 
-    icon: Brain, 
-    title: "AI Workshop Trainer", 
-    desc: "Trained 400+ students in building AI agent & automation projects" 
+  {
+    icon: Brain,
+    title: "AI Workshop Trainer",
+    desc: "Trained 400+ students in building AI agent & automation projects"
   },
 ];
 
@@ -151,7 +151,7 @@ export default function Portfolio() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass py-3' : 'py-5 bg-transparent'}`}>
         <div className="container flex justify-between items-center">
           <button onClick={() => scrollTo('hero')} className="text-xl font-bold text-gradient">SP</button>
-          
+
           {/* Desktop Nav */}
           <div className="hidden md:flex gap-6">
             {NAV_ITEMS.map((item) => (
@@ -203,7 +203,7 @@ export default function Portfolio() {
             <p className="text-muted-foreground max-w-md mx-auto lg:mx-0">
               Building intelligent solutions at the intersection of AI and full-stack development
             </p>
-            
+
             <div className="flex gap-4 justify-center lg:justify-start">
               <a href="#contact" className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover-lift glow-sm">
                 Get in Touch
@@ -238,7 +238,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        
+
         <button onClick={() => scrollTo('about')} className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground hover:text-primary transition-colors">
           <ChevronDown size={32} />
         </button>
@@ -392,7 +392,7 @@ export default function Portfolio() {
                 </a>
               ))}
             </div>
-            
+
             <div className="flex gap-4 justify-center">
               {[
                 { icon: Github, href: 'https://github.com/SiddharthParihar1/', label: 'GitHub' },
