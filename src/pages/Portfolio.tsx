@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Menu, X, Phone, MapPin, Download, ChevronDown, Code, Brain, Trophy, Users, User } from 'lucide-react';
-import profileImg from "../assets/sid.jpeg"
+const profileImg = "https://storage.googleapis.com/astrologer-mahesh-mankar-img/DSC01906-2.jpg.jpeg"
 
 const NAV_ITEMS = ['About', 'Skills', 'Experience', 'Projects', 'Achievements', 'Contact'];
 
